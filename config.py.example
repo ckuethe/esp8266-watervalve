@@ -1,9 +1,10 @@
 config = {
-    #"hostname": "CustomHostnameHere",
-    "ssid": "WifiNameGoesHere",
-    "psk": "WifiPasswordGoesHere",
+    # "ssid": "WifiNameGoesHere",        # required for wifi
+    # "psk": "WifiPasswordGoesHere",     # required for wifi
+    # "hostname": "CustomHostnameHere",  # optional, but nice in DHCP logs
+    # "led_pin": 2, # Not all boards have this. WeMos D1 does, Heltec Wifi-Kit-8 doesn't
     "meter_pin": 12,
     "open_valve_pin": 14,
     "close_valve_pin": 16,
-    "led_pin": 2,
+    "pulse_wait_us": 100_000,  # This might be too short or to long, depending on your sensor
 }
