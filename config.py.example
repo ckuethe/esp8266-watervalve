@@ -1,10 +1,14 @@
+# Copy this file to `config.py`, uncomment and change parameters as required,
+# then install alongside the main watervalve app.
 config = {
     # "ssid": "WifiNameGoesHere",        # required for wifi
     # "psk": "WifiPasswordGoesHere",     # required for wifi
     # "hostname": "CustomHostnameHere",  # optional, but nice in DHCP logs
     # "led_pin": 2, # Not all boards have this. WeMos D1 does, Heltec Wifi-Kit-8 doesn't
-    "meter_pin": 12,
-    "open_valve_pin": 14,
-    "close_valve_pin": 16,
-    "pulse_wait_us": 100_000,  # This might be too short or to long, depending on your sensor
+    # "meter_pin": 12,
+    # "open_valve_pin": 14,
+    # "close_valve_pin": 16,
+    # "pulse_wait_us": 100_000,  # This might be too short or to long, depending on your sensor
+    # "detection_time": 5,  # detection latency, in seconds
+    # "flow_poll_ms": 500,  # how often to poll water flow stat
 }
